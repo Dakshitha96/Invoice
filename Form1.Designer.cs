@@ -44,6 +44,13 @@ namespace Invoice
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -54,13 +61,6 @@ namespace Invoice
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -76,7 +76,7 @@ namespace Invoice
             this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(251, 50);
+            this.textBox1.Size = new System.Drawing.Size(257, 50);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Enter Customer Mobile";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -87,9 +87,9 @@ namespace Invoice
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(260, 0);
+            this.label1.Location = new System.Drawing.Point(266, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 53);
+            this.label1.Size = new System.Drawing.Size(257, 53);
             this.label1.TabIndex = 1;
             this.label1.Text = "Customer Name";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,7 +102,7 @@ namespace Invoice
             this.textBox2.Location = new System.Drawing.Point(3, 101);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(251, 50);
+            this.textBox2.Size = new System.Drawing.Size(257, 50);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Enter Item Code";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -112,9 +112,9 @@ namespace Invoice
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(517, 0);
+            this.label2.Location = new System.Drawing.Point(529, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 53);
+            this.label2.Size = new System.Drawing.Size(257, 53);
             this.label2.TabIndex = 3;
             this.label2.Text = "Address";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,10 +124,10 @@ namespace Invoice
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox3.Location = new System.Drawing.Point(260, 101);
+            this.textBox3.Location = new System.Drawing.Point(266, 101);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(251, 50);
+            this.textBox3.Size = new System.Drawing.Size(257, 50);
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "Quantity";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -139,7 +139,7 @@ namespace Invoice
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Location = new System.Drawing.Point(3, 196);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(251, 50);
+            this.label3.Size = new System.Drawing.Size(257, 50);
             this.label3.TabIndex = 5;
             this.label3.Text = "Item Name";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,9 +149,9 @@ namespace Invoice
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(260, 196);
+            this.label4.Location = new System.Drawing.Point(266, 196);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(251, 50);
+            this.label4.Size = new System.Drawing.Size(257, 50);
             this.label4.TabIndex = 6;
             this.label4.Text = "Unit Price";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,7 +163,7 @@ namespace Invoice
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Location = new System.Drawing.Point(3, 294);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 53);
+            this.label5.Size = new System.Drawing.Size(257, 53);
             this.label5.TabIndex = 7;
             this.label5.Text = "Item Category";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -173,10 +173,10 @@ namespace Invoice
             this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox4.Location = new System.Drawing.Point(260, 297);
+            this.textBox4.Location = new System.Drawing.Point(266, 297);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(251, 50);
+            this.textBox4.Size = new System.Drawing.Size(257, 50);
             this.textBox4.TabIndex = 8;
             this.textBox4.Text = "Discount";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -186,10 +186,10 @@ namespace Invoice
             this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox5.Location = new System.Drawing.Point(517, 297);
+            this.textBox5.Location = new System.Drawing.Point(529, 297);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(251, 50);
+            this.textBox5.Size = new System.Drawing.Size(257, 50);
             this.textBox5.TabIndex = 9;
             this.textBox5.Text = "Sub Total";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -200,10 +200,10 @@ namespace Invoice
             this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox6.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox6.Location = new System.Drawing.Point(774, 297);
+            this.textBox6.Location = new System.Drawing.Point(792, 297);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(251, 50);
+            this.textBox6.Size = new System.Drawing.Size(257, 50);
             this.textBox6.TabIndex = 10;
             this.textBox6.Text = "Total";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -213,9 +213,9 @@ namespace Invoice
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1031, 3);
+            this.button1.Location = new System.Drawing.Point(1055, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(254, 57);
+            this.button1.Size = new System.Drawing.Size(257, 57);
             this.button1.TabIndex = 11;
             this.button1.Text = "New Invoice";
             this.button1.UseVisualStyleBackColor = true;
@@ -224,9 +224,9 @@ namespace Invoice
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1031, 101);
+            this.button2.Location = new System.Drawing.Point(1055, 101);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(254, 57);
+            this.button2.Size = new System.Drawing.Size(257, 57);
             this.button2.TabIndex = 12;
             this.button2.Text = "Sales Return";
             this.button2.UseVisualStyleBackColor = true;
@@ -235,9 +235,9 @@ namespace Invoice
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(1031, 199);
+            this.button3.Location = new System.Drawing.Point(1055, 199);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(254, 57);
+            this.button3.Size = new System.Drawing.Size(257, 57);
             this.button3.TabIndex = 13;
             this.button3.Text = "Save to Draft";
             this.button3.UseVisualStyleBackColor = true;
@@ -263,6 +263,55 @@ namespace Invoice
             this.dataGridView1.Size = new System.Drawing.Size(1040, 873);
             this.dataGridView1.TabIndex = 18;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 102.9757F;
+            this.Column1.HeaderText = "LINE ID";
+            this.Column1.MinimumWidth = 10;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 101.3787F;
+            this.Column2.HeaderText = "ITEM CODE";
+            this.Column2.MinimumWidth = 10;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 99.24887F;
+            this.Column3.HeaderText = "ITEM NAME";
+            this.Column3.MinimumWidth = 10;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 99.06019F;
+            this.Column4.HeaderText = "UNIT PRICE";
+            this.Column4.MinimumWidth = 10;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.FillWeight = 98.26161F;
+            this.Column5.HeaderText = "QTY";
+            this.Column5.MinimumWidth = 10;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.FillWeight = 99.32635F;
+            this.Column6.HeaderText = "DSICOUNT";
+            this.Column6.MinimumWidth = 10;
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.FillWeight = 99.74854F;
+            this.Column7.HeaderText = "SUB TOTAL";
+            this.Column7.MinimumWidth = 10;
+            this.Column7.Name = "Column7";
             // 
             // tableLayoutPanel1
             // 
@@ -420,55 +469,6 @@ namespace Invoice
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1315, 879);
             this.tableLayoutPanel4.TabIndex = 24;
-            // 
-            // Column7
-            // 
-            this.Column7.FillWeight = 99.74854F;
-            this.Column7.HeaderText = "SUB TOTAL";
-            this.Column7.MinimumWidth = 10;
-            this.Column7.Name = "Column7";
-            // 
-            // Column6
-            // 
-            this.Column6.FillWeight = 99.32635F;
-            this.Column6.HeaderText = "DSICOUNT";
-            this.Column6.MinimumWidth = 10;
-            this.Column6.Name = "Column6";
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 98.26161F;
-            this.Column5.HeaderText = "QTY";
-            this.Column5.MinimumWidth = 10;
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 99.06019F;
-            this.Column4.HeaderText = "UNIT PRICE";
-            this.Column4.MinimumWidth = 10;
-            this.Column4.Name = "Column4";
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 99.24887F;
-            this.Column3.HeaderText = "ITEM NAME";
-            this.Column3.MinimumWidth = 10;
-            this.Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 101.3787F;
-            this.Column2.HeaderText = "ITEM CODE";
-            this.Column2.MinimumWidth = 10;
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 102.9757F;
-            this.Column1.HeaderText = "LINE ID";
-            this.Column1.MinimumWidth = 10;
-            this.Column1.Name = "Column1";
             // 
             // Form1
             // 
